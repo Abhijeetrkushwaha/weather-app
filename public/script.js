@@ -3,7 +3,7 @@ window.onload = function () {
   let cityData = document.querySelector(".city-data");
   let search = document.querySelector(".search");
   let display = document.querySelector(".display");
-  // asynchronous function for sending city name
+  // asynchronous function for sending city name.
   async function postData(place) {
     const data = {
       place: place,
