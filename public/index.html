@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Weather app</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <form>
-            <input type="text" placeholder="Enter city name" class="city-data">
-            <input type="submit" value="search" class="search">
-        </form>
-        <div class="display">
-            <div class="icon-container">
-            <div class="icon">
-                <img class="icon-img" src="" alt="">
-            </div>
-            <div class="description">
-                <p class="data-description"></p>
-            </div>
+        <!-- form starts -->
+      <form>
+        <input type="text" placeholder="Enter city name" class="city-data" />
+        <input type="submit" value="search" class="search" />
+      </form>
+      <!-- form ends -->
+      <!-- content starts -->
+      <div class="display">
+          <!-- icon starts -->
+        <div class="icon-container">
+          <div class="icon">
+            <img class="icon-img" src="" alt="" />
+          </div>
+          <div class="description">
+            <p class="data-description"></p>
+          </div>
         </div>
+        <!-- icon ends -->
+        <!-- main-content starts -->
         <div class="content">
-            <div class="min-max-temp">
-                <p>Max: <span class="max-temp"></span>&deg;&uarr;</p>
-                <p>Min: <span class="min-temp"></span>&deg;&darr;</p>
-            </div>
-            <div class="main-temp">
-                <h2><span class="main-temp-data"></span>&deg;C</h2>
-                <p>Feels like <span class="feels-like"></span>&deg;</p>
-            </div>
-            <div><p class="place-data"></p></div>
+          <div class="min-max-temp">
+            <p>Max: <span class="max-temp"></span>&deg;&uarr;</p>
+            <p>Min: <span class="min-temp"></span>&deg;&darr;</p>
+          </div>
+          <div class="main-temp">
+            <h2><span class="main-temp-data"></span>&deg;C</h2>
+            <p>Feels like <span class="feels-like"></span>&deg;</p>
+          </div>
+          <div><p class="place-data"></p></div>
         </div>
-        </div>
+        <!-- main-content ends -->
+      </div>
+      <!-- contents ends -->
     </div>
-    
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
